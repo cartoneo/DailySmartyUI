@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import Logo from "./logo";
+import SearchBar from './search-bar';
+import RecentPosts from './recent-posts';
 
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>
+        <div>
           <Logo/>
-        </h1>
+          <SearchBar/>
+          <RecentPosts/>
+        </div>
+
       </div>
     );
   }
